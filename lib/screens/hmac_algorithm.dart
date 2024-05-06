@@ -25,7 +25,7 @@ class _HMACEncryptionState extends State<HMACEncryption> {
     return Scaffold(
       appBar: AppBar(
         title: Text('HMAC SHA-256 Algorithm'),
-        backgroundColor: Color.fromARGB(255, 13, 13, 13),
+        backgroundColor: Color.fromARGB(255, 11, 33, 51),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -55,7 +55,7 @@ class _HMACEncryptionState extends State<HMACEncryption> {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),
+                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),
                   ),
                   onPressed: () {
                     _calculateHMAC(defaultHMACKey);
@@ -72,7 +72,7 @@ class _HMACEncryptionState extends State<HMACEncryption> {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),
+                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),
                   ),
                   onPressed: () {
                     Navigator.of(context).pushNamed('/hmac_decryption');

@@ -33,12 +33,13 @@ const MyApp({super.key});
       // routes: [],
       home: EasySplashScreen(
         loadingTextPadding: EdgeInsets.all(10),
-        logo: Image.asset("assets/images/encryption_logo.png"), logoWidth: 130,
-        title: Text("Comparative Analysis of \nEncryption Algorithms", style: TextStyle(color: Colors.white, fontSize: 24,), textAlign: TextAlign.center,),
-        backgroundColor: Color.fromARGB(255, 13,13,13,),
+        logo: Image.asset("assets/images/logo.png"), logoWidth: 130,
+        title: Text("Implementation of \nEncryption Algorithms", style: TextStyle(color: Colors.white, fontSize: 24,), textAlign: TextAlign.center,),
+        // backgroundColor: Color.fromARGB(255, 13,13,13,),
+        backgroundImage: AssetImage("assets/images/background.png"),
         durationInSeconds: 5,
         showLoader: false,
-        loadingText: Text("Name: Saad Bin Tariq\nStudent ID: 2356185\nSupervisor: Rasha Hafidh\n\n", style: TextStyle(color: Colors.white), textAlign: TextAlign.center,),
+        loadingText: Text("Loading...", style: TextStyle(color: Colors.white), textAlign: TextAlign.center,),
         navigator: Home(),
          ),
 

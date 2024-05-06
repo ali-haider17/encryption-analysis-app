@@ -24,7 +24,7 @@ class _DigestSHA256State extends State<DigestSHA256> {
     return Scaffold(
       appBar: AppBar(
         title: Text('SHA-256 Digest Algorithm'),
-        backgroundColor: Color.fromARGB(255, 13, 13, 13),
+        backgroundColor: Color.fromARGB(255, 11, 33, 51),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -55,7 +55,7 @@ class _DigestSHA256State extends State<DigestSHA256> {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),
+                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),
                   ),
               onPressed: _calculateDigest,
               child: Text('Encrypt Data', style: TextStyle(fontSize: 18)),
@@ -70,7 +70,7 @@ class _DigestSHA256State extends State<DigestSHA256> {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),
+                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),
                   ),
                   onPressed: () {
                     Navigator.of(context).pushNamed('/digest_sha256_decryption');

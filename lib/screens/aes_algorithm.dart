@@ -45,7 +45,7 @@ class _AESEncryptionState extends State<AESEncryption> {
     return Scaffold(
       appBar: AppBar(
         title: Text('AES Algorithm'),
-        backgroundColor: Color.fromARGB(255, 13, 13, 13),
+        backgroundColor: Color.fromARGB(255, 11, 33, 51),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -76,7 +76,7 @@ class _AESEncryptionState extends State<AESEncryption> {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),
+                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),
                   ),
                   onPressed: () {
                     _encryptMessage(defaultAESKey); // Pass the password
@@ -93,7 +93,7 @@ class _AESEncryptionState extends State<AESEncryption> {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),
+                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),
                   ),
                   onPressed: () {
                     Navigator.of(context).pushNamed('/aes_decryption');

@@ -23,7 +23,7 @@ class _HMACDecryptionState extends State<HMACDecryption> {
     return Scaffold(
       appBar: AppBar(
         title: Text('HMAC SHA-256 Decryption'),
-        backgroundColor: Color.fromARGB(255, 13, 13, 13),
+        backgroundColor: Color.fromARGB(255, 11, 33, 51),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -48,7 +48,7 @@ class _HMACDecryptionState extends State<HMACDecryption> {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),
+                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),
                   ),
                     onPressed: _displayMessage,
                     child: Text('Decrypt Message', style: TextStyle(fontSize: 18)),

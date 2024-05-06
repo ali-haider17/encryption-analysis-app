@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
+import 'dart:io';
 
 class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Comparative Encryption Analysis'), backgroundColor: Color.fromARGB(255, 13,13,13,),
+        title: Text('Comparative Encryption Analysis'), backgroundColor: Color.fromARGB(255, 11, 33, 51),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.exit_to_app),
+            onPressed: () {
+              // Add exit functionality here
+              exit(0);
+            },
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -30,7 +40,7 @@ class Home extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0), // Set the desired padding
                     child: ElevatedButton(
-                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),),
+                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),),
                       onPressed: () {
                         // Navigate to the AES algorithm screen
                         Navigator.of(context).pushNamed('/aes_algorithm');
@@ -53,7 +63,7 @@ class Home extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0), // Set the desired padding
                     child: ElevatedButton(
-                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),),
+                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),),
                       onPressed: () {
                         // Navigate to the RSA algorithm screen
                         Navigator.of(context).pushNamed('/rsa_algorithm');
@@ -76,7 +86,7 @@ class Home extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0), // Set the desired padding
                     child: ElevatedButton(
-                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),),
+                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),),
                       onPressed: () {
                         // Navigate to the HMAC algorithm screen
                         Navigator.of(context).pushNamed('/hmac_algorithm');
@@ -99,7 +109,7 @@ class Home extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0), // Set the desired padding
                     child: ElevatedButton(
-                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 13, 13, 13)),),
+                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 11, 33, 51)),),
                       onPressed: () {
                         // Navigate to the Digest algorithm screen
                         Navigator.of(context).pushNamed('/digest_sha256_algorithm');
