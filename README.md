@@ -1,4 +1,5 @@
-**Encryption Analysis** 
+**Encryption Analysis**
+
 This is a cutting-edge Flutter application designed to safeguard your data with the latest encryption algorithms. Built using the powerful Dart language and the versatile Flutter SDK, SecureCipher utilizes the robust capabilities of the Pointy Castle library to implement advanced encryption techniques, including AES, RSA, HMAC, and SHA-256 Digest.
 
 **Encryption Algorithms:**
